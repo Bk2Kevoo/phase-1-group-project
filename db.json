@@ -1,0 +1,71 @@
+{
+    "cars": [
+      {
+        "id": 1,
+        "year": 2021,
+        "make": "Lexus",
+        "model": "Rcf",
+        "engine": "V8",
+        "drivetrain": "Rwd",
+        "class": "Coupe",
+        "color": "White",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "year": 2024,
+        "make": "Bmw",
+        "model": "X5m",
+        "engine": "V8",
+        "drivetrain": "Awd",
+        "class": "Suv",
+        "color": "White",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "year": 1999,
+        "make": "Nissan",
+        "model": "R34 Skyline",
+        "engine": "V6",
+        "drivetrain": "Awd",
+        "class": "Coupe",
+        "color": "White",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "year": 2014,
+        "make": "Porshe",
+        "model": "GT3 RS",
+        "engine": "V6",
+        "drivetrain": "Rwd",
+        "class": "Coupe",
+        "color": "Grey",
+        "image": "" 
+      },
+      {
+        "id": 5,
+        "year": 2025,
+        "make": "Audi",
+        "model": "RS6 Avant",
+        "engine": "V8",
+        "drivetrain": "Awd",
+        "class": "Wagon",
+        "color": "Black",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "year": 2024,
+        "make": "Koenigsegg",
+        "model": "Jesko",
+        "engine": "V8",
+        "drivetrain": "Rwd",
+        "class": "Coupe",
+        "color": "Black",
+        "image": ""
+      }
+    ]
+  } 
+  
