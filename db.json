@@ -30,8 +30,8 @@
         "engine": "V6",
         "drivetrain": "Awd",
         "class": "Coupe",
-        "color": "White",
-        "image": "./images/nissan jdm.jpg"
+        "color": "Silver",
+        "image": ""
       },
       {
         "id": 4,
@@ -63,8 +63,8 @@
         "engine": "V8",
         "drivetrain": "Rwd",
         "class": "Coupe",
-        "color": "Black",
-        "image": "./image/mcClaren.png"
+        "color": "Grey",
+        "image": ""
       }
     ]
   } 
