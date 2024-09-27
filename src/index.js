@@ -14,7 +14,7 @@ function displayCars(car) {
 }
 
 function handleClick() {
-    handleClick()
+    console.log()
 }
 
 
