@@ -26,3 +26,9 @@ fetch(baseUrl + "/cars")
     .catch(error => {
         console.error("Error fetching cars:", error);
     });
+
+
+    function addSubmitListener() {
+        const form = document.querySelector('#new-car')
+        form.addEventListener('submit', e => addCar(e))
+    }

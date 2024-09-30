@@ -1,0 +1,11 @@
+/* img {
+    max-width: 20%;
+    height: auto; 
+} */
+
+img {
+    width: 30%; /* Full width of the container */
+    height: 335px; /* Set a fixed height */
+    object-fit: cover; /* Crop if necessary */
+}
+
