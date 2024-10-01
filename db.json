@@ -65,20 +65,6 @@
       "class": "Coupe",
       "color": "Gray",
       "image": "./images/koen.jpg"
-    },
-    {
-      "id": "d1b4",
-      "year": "2009",
-      "make": "honda",
-      "model": "civic",
-      "image": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-      "id": "1740",
-      "year": "2009",
-      "make": "honda",
-      "model": "cds",
-      "image": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
   ]
 }

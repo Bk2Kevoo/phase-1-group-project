@@ -16,43 +16,50 @@
 
   <div id="featured-inventory"></div>
 
-  <div id="controls">
-    <button>Back</button>
-    <button>Next</button>
+  <div id="Search">
+    <input type="text" name="search-car" id="search-car" placeholder="Search for a car and press return.." />
   </div>
 
+
+  <!-- <div id="controls">
+    <button>←</button>
+    <button>→</button>
+  </div> -->
+
   <div id="car-details">
-    <h3 class="vehicle-year"></h3>
-    <h4 class="vehicle-make"></h4>
-    <h5 class="vehicle-model"></h5>
+    <h3 class="vehicle-year">Insert Year Here</h3>
+    <h4 class="vehicle-make">Insert Make</h4>
+    <h5 class="vehicle-model">Model</h5>
     <img src="" alt="" id="car-image">
   </div>
 
-
   <div id="vehicle-price"></div>
 
-  <form id="new-car">
-    <h4>Add New Car</h4>
+  <button id="toggle-form-btn">Add New Car</button>
 
-    <label for="new-year">Year: </label>
+  <div id="new-car-form" style="display:none;">
+    <form id="new-car">
 
-    <input name="year" id="new-year" />
+      <label for="new-year">Year: </label>
 
-    <label for="new-make">Make:</label>
+      <input name="year" id="new-year" />
 
-    <input name="make" id="new-make" />
+      <label for="new-make">Make:</label>
 
-    <label for="new-model">Model: </label>
+      <input name="make" id="new-make" />
 
-    <input name="model" id="new-model" />
+      <label for="new-model">Model: </label>
 
-    <label for="new-image">Image: </label>
+      <input name="model" id="new-model" />
 
-    <input name="image" id="new-image" />
+      <label for="new-image">Image: </label>
 
-    <input type="url" id='submit-button' value="Create" />
-  </form>
+      <input name="image" id="new-image" />
 
+      <input type="submit" id='submit-button' value="Create" />
+
+    </form>
+  </div>
 </body>
 
 </html>
