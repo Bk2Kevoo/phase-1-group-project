@@ -8,6 +8,7 @@ const displayImage = document.querySelector("#car-image")
 
 
 const main = () => {
+    inventory.innerHTML = '';
     fetch(baseUrl + "/cars")
         .then(response => response.json())
         .then(cars => cars.forEach(car => displayCar(car)))
@@ -40,13 +41,13 @@ function addSubmitListener() {
 function addCar(e) {
     e.preventDefault();
 
-    const newCar = {
-        year: e.target["new-year"].value,
+    const newCar = 0{
+        year: e1.target["new-year"].value,
         make: e.target["new-make"].value,
         model: e.target["new-model"].value,
         image: e.target["new-image"].value
     }
-
+    
     // e.target.reset()
     fetch(baseUrl + '/cars', {
         method: "POST",
