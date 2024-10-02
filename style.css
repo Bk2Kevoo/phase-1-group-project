@@ -90,3 +90,50 @@ body {
 .car-card:hover {
   transform: scale(1.05);
 }
+
+.vehicle-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+
+.vehicle-model,
+.vehicle-make,
+.vehicle-year {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#buy-now {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#buy-now:hover {
+  background-color: #45a049;
+}
+
+#Basic-information {
+  display: flex;
+  justify-content: right;
+}
+
+#container {
+  display: flex;
+}
+
+#left {
+  float: left;
+}
+#right {
+  float: right;
+}

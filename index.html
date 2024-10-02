@@ -27,47 +27,78 @@
   <h2 class="title">
     Featured Inventory
   </h2>
+  <div id="container">
+    <div id="left"></div>
+    <button id="toggle-form-btn">Add New Car</button>
 
-  <div id="car-details">
-    <div class="vehicle-info">
-      <h3 class="vehicle-year">Insert Year Here</h3>
-      <h4 class="vehicle-make">Insert Make</h4>
-      <h5 class="vehicle-model">Model</h5>
+    <div id="new-car-form" style="display:none;">
+      <form id="new-car">
+
+        <label for="new-year">Year: </label>
+
+        <input name="year" id="new-year" />
+
+        <label for="new-make">Make:</label>
+
+        <input name="make" id="new-make" />
+
+        <label for="new-model">Model: </label>
+
+        <input name="model" id="new-model" />
+
+        <label for="new-image">Image: </label>
+
+        <input name="image" id="new-image" />
+
+        <input type="submit" id='submit-button' value="Create" />
+
+      </form>
     </div>
-    <img src="" alt="" id="car-image">
+  </div>
+  <div id="center">
+    <div id="car-details">
+      <div class="vehicle-info">
+        <h3 class="vehicle-year">Insert Year Here</h3>
+        <h4 class="vehicle-make">Insert Make</h4>
+        <h5 class="vehicle-model">Model</h5>
+      </div>
+      <img src="" alt="" id="car-image">
+    </div>
+
+    <button id="buy-now">Buy Now</button>
   </div>
 
-  <button id="buy-now">Buy Now</button>
+  <!-- <div id="vehicle-price"></div> -->
 
-  <div id="vehicle-price"></div>
+  <!-- <div id="left">
+      <button id="toggle-form-btn">Add New Car</button>
 
-  <button id="toggle-form-btn">Add New Car</button>
+      <div id="new-car-form" style="display:none;">
+        <form id="new-car">
 
-  <div id="new-car-form" style="display:none;">
-    <form id="new-car">
+          <label for="new-year">Year: </label>
 
-      <label for="new-year">Year: </label>
+          <input name="year" id="new-year" />
 
-      <input name="year" id="new-year" />
+          <label for="new-make">Make:</label>
 
-      <label for="new-make">Make:</label>
+          <input name="make" id="new-make" />
 
-      <input name="make" id="new-make" />
+          <label for="new-model">Model: </label>
 
-      <label for="new-model">Model: </label>
+          <input name="model" id="new-model" />
 
-      <input name="model" id="new-model" />
+          <label for="new-image">Image: </label>
 
-      <label for="new-image">Image: </label>
+          <input name="image" id="new-image" />
 
-      <input name="image" id="new-image" />
+          <input type="submit" id='submit-button' value="Create" />
 
-      <input type="submit" id='submit-button' value="Create" />
+        </form>
+      </div>
+    </div> -->
 
-    </form>
-  </div>
-
-  <div id="Basic-information">
+  <div id="Basic-information right">
     <table id="car-info-table">
       <thead>
         <tr>
@@ -80,7 +111,7 @@
       </thead>
       <tbody>
   </div>
-
+  </div>
 </body>
 
 </html>
