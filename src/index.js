@@ -85,28 +85,31 @@ function addCar(e) {
         make: e.target["new-make"].value,
         model: e.target["new-model"].value,
         image: e.target["new-image"].value,
-        id: Date.now()
+        // id: Date.now()
     }
-    addedCars.push(newCar);
+    // addedCars.push(newCar);
     // allCars.push(newCar);
-    allCars = [...allCars, newCar];
-    displayCar(newCar);
-    e.target.reset();
+    // allCars = [...allCars, newCar];
+    // displayCar(newCar);
+    // e.target.reset();
+
+
+    fetch(baseUrl + '/cars', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newCar)
+    })
+        .then(response => response.json())
+        .then(car => {
+            addedCars.push(car);
+            allCars = [...allCars, car];
+            displayCar(car)
+            e.target.reset()
+        })
+        .catch(error => console.error("Error adding car:", error));
+
 }
-
-// fetch(baseUrl + '/cars', {
-//     method: "DELTE",
-//     headers: {
-//         "Content-Type": "application/json"
-//     },
-//     body: JSON.stringify()
-// })
-//     .then(response => response.json())
-//     .then(car => {
-//         displayCar(car)
-// e.target.reset()
-//     })
-//     .catch(error => console.error("Error adding car:", error));
-
 main();
 
