@@ -94,21 +94,21 @@ function addCar(e) {
     // e.target.reset();
 
 
-    fetch(baseUrl + '/cars', {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(newCar)
-    })
-        .then(response => response.json())
-        .then(car => {
-            addedCars.push(car);
-            allCars = [...allCars, car];
-            displayCar(car)
-            e.target.reset()
-        })
-        .catch(error => console.error("Error adding car:", error));
+    // fetch(baseUrl + '/cars', {
+    //     method: "POST",
+    //     headers: {
+    //         "Content-Type": "application/json"
+    //     },
+    //     body: JSON.stringify(newCar)
+    // })
+    //     .then(response => response.json())
+    //     .then(car => {
+    //         addedCars.push(car);
+    //         allCars = [...allCars, car];
+    //         displayCar(car)
+    //         e.target.reset()
+    //     })
+    //     .catch(error => console.error("Error adding car:", error));
 
 }
 main();
