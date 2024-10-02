@@ -88,7 +88,7 @@ function addCar(e) {
 
 
 // fetch(baseUrl + '/cars', {
-//     method: "POST",
+//     method: "DELETE",
 //     headers: {
 //         "Content-Type": "application/json"
 //     },
@@ -97,7 +97,7 @@ function addCar(e) {
 //     .then(response => response.json())
 //     .then(car => {
 //         displayCar(car)
-        // e.target.reset()
+// e.target.reset()
 //     })
 //     .catch(error => console.error("Error adding car:", error));
 

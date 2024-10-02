@@ -34,8 +34,8 @@ body {
 
 #car-details img {
   /* max-width: 100%; */
-  height: 50vh;
-  width: 70vw;
+  height: 66vh;
+  width: 55vw;
   cursor: pointer;
   object-fit: cover;
 }
