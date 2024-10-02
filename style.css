@@ -137,3 +137,67 @@ body {
 #right {
   float: right;
 }
+
+#toggle-form-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px 0;
+}
+
+#toggle-form-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+#new-car-form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  width: 300px; 
+  text-align: left; 
+}
+
+#new-car-form label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#new-car-form input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+#new-car-form input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+#new-car-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
