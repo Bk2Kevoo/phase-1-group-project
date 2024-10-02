@@ -87,13 +87,6 @@
       "class": "Luxury Sports Car",
       "color": "MANUFAKTUR Alpine Grey",
       "image": "./images/slamg.jpg"
-    },
-    {
-      "id": "44d2",
-      "year": "2009",
-      "make": "honda",
-      "model": "civic",
-      "image": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
   ]
 }
