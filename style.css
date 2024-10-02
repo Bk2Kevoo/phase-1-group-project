@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
 header {
   padding: 0.5rem;
   width: 100%;
@@ -32,10 +38,15 @@ body {
   align-items: center;
 }
 
+#car-details {
+  position: relative;
+}
+
+
 #car-details img {
   /* max-width: 100%; */
-  height: 50vh;
-  width: 70vw;
+  height: 66vh;
+  width: 55vw;
   cursor: pointer;
   object-fit: cover;
 }
@@ -44,7 +55,7 @@ body {
   padding: 10px;
   border: 2px solid #000000;
   border-radius: 5px;
-  width: 110%;
+  width: 114%;
   max-width: 400px;
   margin: 20px auto;
   display: block;
@@ -52,17 +63,18 @@ body {
 
 #Search input:focus {
   border-color: #000000;
-  outline: none; 
+  outline: none;
 }
+
 #featured-inventory {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; 
+  gap: 20px;
 }
 
 #featured-inventory img {
-  width: 250px;
-  height: 150px;
+  width: 200px;
+  height: 130px;
   border-radius: 8px;
 }
 
@@ -77,4 +89,40 @@ body {
 
 .car-card:hover {
   transform: scale(1.05);
+}
+
+.vehicle-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+
+.vehicle-model,
+.vehicle-make,
+.vehicle-year {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#buy-now {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#buy-now:hover {
+  background-color: #45a049;
+}
+
+ #Basic-information {
+  display: flex;
+  justify-content: right;
 }

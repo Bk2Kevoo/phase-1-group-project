@@ -6,9 +6,8 @@ const toggleFormBtn = document.getElementById("toggle-form-btn")
 const newCarForm = document.getElementById("new-car-form")
 const searchInput = document.getElementById("search-car")
 
-let allCars = []
+let allCars = [];
 let addedCars = [];
-
 
 const handleSearch = (e) => {
     const userSearch = e.target.value.toUpperCase()
@@ -22,8 +21,7 @@ const attachListenerToInput = () => {
     searchInput.addEventListener("input", handleSearch)
 }
 
-attachListenerToInput()
-
+attachListenerToInput();
 
 const main = () => {
     inventory.innerHTML = '';
@@ -44,7 +42,15 @@ function displayCar(car) {
     carImage.alt = car.make;
     carImage.addEventListener("click", () => carDetails(car))
     inventory.append(carImage);
+
+    const buyNowButton = document.getElementById("buy-now")
+    buyNowButton.textContent = "Buy Now";
+    buyNowButton.addEventListener("click", () => handleBuyNow(car))
 }
+function handleBuyNow() {
+    confetti();
+}
+
 
 function carDetails(car) {
     displayImage.src = car.image
@@ -70,6 +76,7 @@ function addSubmitListener() {
     });
 }
 
+
 function addCar(e) {
     e.preventDefault();
 
@@ -82,14 +89,13 @@ function addCar(e) {
     }
     addedCars.push(newCar);
     // allCars.push(newCar);
-    allCars = [...allCars, newCar]
+    allCars = [...allCars, newCar];
     displayCar(newCar);
     e.target.reset();
 }
 
-
 // fetch(baseUrl + '/cars', {
-//     method: "POST",
+//     method: "DELTE",
 //     headers: {
 //         "Content-Type": "application/json"
 //     },
@@ -98,9 +104,9 @@ function addCar(e) {
 //     .then(response => response.json())
 //     .then(car => {
 //         displayCar(car)
-        // e.target.reset()
+// e.target.reset()
 //     })
 //     .catch(error => console.error("Error adding car:", error));
 
-main()
+main();
 
