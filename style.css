@@ -39,3 +39,42 @@ body {
   cursor: pointer;
   object-fit: cover;
 }
+
+#Search input {
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  width: 110%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+}
+
+#Search input:focus {
+  border-color: #000000;
+  outline: none; 
+}
+#featured-inventory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+#featured-inventory img {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.car-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
