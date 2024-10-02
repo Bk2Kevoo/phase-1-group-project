@@ -65,6 +65,28 @@
       "class": "Coupe",
       "color": "Gray",
       "image": "./images/koen.jpg"
+    },
+    {
+      "id": "7",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "GLE AMG",
+      "engine": "4.0L 8 Cylinder Engine",
+      "drivetrain": "AWD 4MATIC",
+      "class": "SUV",
+      "color": "MANUFAKTUR Alpine Grey",
+      "image": "./images/gle.png"
+    },
+    {
+      "id": "8",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "SL AMG",
+      "engine": "2.0L 4-Cylinder",
+      "drivetrain": "RWD",
+      "class": "Luxury Sports Car",
+      "color": "MANUFAKTUR Alpine Grey",
+      "image": "./images/slamg.jpg"
     }
   ]
 }

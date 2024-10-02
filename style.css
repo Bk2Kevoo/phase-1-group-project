@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
 header {
   padding: 0.5rem;
   width: 100%;
@@ -32,10 +38,15 @@ body {
   align-items: center;
 }
 
+#car-details {
+  position: relative;
+}
+
+
 #car-details img {
-  max-width: 100%;
-  height: 50vh;
-  width: 70vw;
+  /* max-width: 100%; */
+  height: 66vh;
+  width: 55vw;
   cursor: pointer;
   object-fit: cover;
 }
@@ -44,7 +55,7 @@ body {
   padding: 10px;
   border: 2px solid #000000;
   border-radius: 5px;
-  width: 101%;
+  width: 110%;
   max-width: 400px;
   margin: 20px auto;
   display: block;
@@ -62,8 +73,8 @@ body {
 }
 
 #featured-inventory img {
-  width: 250px;
-  height: 150px;
+  width: 200px;
+  height: 130px;
   border-radius: 8px;
 }
 
@@ -78,45 +89,4 @@ body {
 
 .car-card:hover {
   transform: scale(1.05);
-}
-
-input[type="text"],
-input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #000000;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-button:hover {
-  background-color: #000000;
-  transform: scale(1.05);
-}
-
-#car-details {
-  position: relative;
-  text-align: center;
-}
-
-.vehicle-year,
-.vehicle-make,
-.vehicle-model {
-  margin: 5px 0;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-#car-image {
-  border-radius: 10px;
 }
