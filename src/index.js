@@ -73,8 +73,8 @@ function addSubmitListener() {
 function addCar(e) {
     e.preventDefault();
 
-    const newCar = 0{
-        year: e1.target["new-year"].value,
+    const newCar = {
+        year: e.target["new-year"].value,
         make: e.target["new-make"].value,
         model: e.target["new-model"].value,
         image: e.target["new-image"].value,
