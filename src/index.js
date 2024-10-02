@@ -95,12 +95,14 @@ function addCar(e) {
 //     },
 //     body: JSON.stringify()
 // })
-//     .then(response => response.json())
+//     .then(response => response.json(newCar))
 //     .then(car => {
 //         displayCar(car)
-        // e.target.reset()
+//         e.target.reset()
 //     })
 //     .catch(error => console.error("Error adding car:", error));
 
 main()
+
+
 
