@@ -26,6 +26,7 @@ attachListenerToInput()
 
 
 const main = () => {
+    inventory.innerHTML = '';
     fetch(baseUrl + "/cars")
         .then(response => response.json())
         .then(cars => {
