@@ -36,8 +36,9 @@ We also offer an online buying platform that, when you press "BUY NOW," displays
 
 Credits 
 
-* This project was created by Kevin Fajardo, Casey Rayson, Kaleb Malone
-* We created a project with the skills we learned from Flatiron, and some outside reasearch, and we made a functional webpage
-* We used google Images for the cars, link for the confetti, and the rest styling was all our own creativity
+* This project was created by Kevin Fajardo, Casey Rayson, and Kaleb Malone.
+* We applied the skills we learned from Flatiron, along with some additional research, to create a functional webpage.
+* We used Google Images for the car images, a link for the confetti effect, and the rest of the styling was our own creative work.
+
 
 
