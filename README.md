@@ -41,4 +41,4 @@ Credits
 * We used Google Images for the car images, a link for the confetti effect, and the rest of the styling was our own creative work.
 
 
-
+Thank you! 
