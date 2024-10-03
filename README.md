@@ -1,6 +1,6 @@
-Looking for a Luxury/Sports car of your Dream?
+* Looking for a Luxury/Sports car of your Dream?
 
-Look no further! Here at Chad Motorsports we offer a variety of cars that could YOU can possible go away with today.
+*  Look no further! Here at Chad Motorsports we offer a variety of cars that could YOU can possible go away with today.
 
 Things we used to get the page working
 
