@@ -21,7 +21,6 @@ const attachListenerToInput = () => {
     searchInput.addEventListener("input", handleSearch)
 }
 
-attachListenerToInput();
 
 const main = () => {
     inventory.innerHTML = '';
@@ -33,7 +32,6 @@ const main = () => {
             cars.forEach(car => displayCar(car))
         })
         .catch(error => alert(error))
-    addSubmitListener();
 }
 
 function displayCar(car) {
@@ -69,9 +67,9 @@ function addSubmitListener() {
     form.addEventListener("submit", (e) => addCar(e))
     toggleFormBtn.addEventListener("click", () => {
         if (newCarForm.style.display === "none" || newCarForm.style.display === "") {
-            newCarForm.style.display = "block";
+            newCarForm.style.display = "block"
         } else {
-            newCarForm.style.display = "none";
+            newCarForm.style.display = "none"
         }
     });
 }
@@ -85,31 +83,24 @@ function addCar(e) {
         make: e.target["new-make"].value,
         model: e.target["new-model"].value,
         image: e.target["new-image"].value,
-        // id: Date.now()
     }
-    // addedCars.push(newCar);
-    // allCars.push(newCar);
-    // allCars = [...allCars, newCar];
-    // displayCar(newCar);
-    // e.target.reset();
 
-
-    // fetch(baseUrl + '/cars', {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-Type": "application/json"
-    //     },
-    //     body: JSON.stringify(newCar)
-    // })
-    //     .then(response => response.json())
-    //     .then(car => {
-    //         addedCars.push(car);
-    //         allCars = [...allCars, car];
-    //         displayCar(car)
-    //         e.target.reset()
-    //     })
-    //     .catch(error => console.error("Error adding car:", error));
-
+    fetch(baseUrl + '/cars', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newCar)
+    })
+        .then(response => response.json())
+        .then(car => {
+            addedCars.push(car)
+            allCars = [...allCars, car]
+            displayCar(car)
+            e.target.reset()
+        })
+        .catch(error => console.error("Error adding car:", error))
 }
+attachListenerToInput();
+addSubmitListener();
 main();
-
